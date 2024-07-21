@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 5%;
+    background-color: #CCC;
+    height: 100vh;
+}
+
+.container-decodificador {
+    display: flex;
+    height: 100%;
+    
+}
+
+.texto-principal {
+    width: 70%;
+    border: 1px solid black;
+}
+
+.container-texto-de-entrada {
+    height:50%;
+}
+
+#texto-de-entrada {
+    width: 100%;
+    height: 100%;
+    background-color: #CCC;
+    border: none;
+}
+
+.aviso{
+    display: flex;
+}
+
+.resultado-decodificador {
+    width: 30%;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.resultado-texto {
+    height:40%;
+}
+
+.imagem-inicial {
+    width: 100%;
+}
