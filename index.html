@@ -7,31 +7,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="logo">
+        <img src="assets/logo-alura.png" alt="Logo">
+    </div>
     <main class="container-decodificador">
         <div class="texto-principal" >
-            <img src="assets/logo-alura.png" alt="Logo">
             <div class="container-texto-de-entrada">
-                <textarea name="" id="texto-de-entrada">Digite seu texto</textarea>
-            </div>           
-            <div class="aviso">
-                <img src="assets/bi_exclamation-circle-fill.png" alt="Ícone de atenção">
-                <p>Apenas letras minúsculas e sem acento.</p>
-            </div>
-            <div class="botoes">
-                <button>Criptografar</button>
-                <button>Descriptografar</button>
-            </div>
+                <textarea name="" id="texto-de-entrada">Digite seu texto aqui...</textarea>
+            </div>  
+            <div>
+                <div class="aviso">
+                    <img src="assets/bi_exclamation-circle-fill.png" alt="Ícone de atenção">
+                    <p>Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="botoes">
+                    <button id="criptografar">Criptografar</button>
+                    <button>Descriptografar</button>
+                </div>
+            </div>         
         </div>
         <div class="resultado-decodificador">
             <div class="resultado-texto">
                 <p></p>
             </div>
-            <img class="imagem-inicial" src="assets/foto-inicial.png" alt="Imagem de Exemplo">
             <div class="texto-inicial-resultado">
+                <img class="imagem-inicial" src="assets/foto-inicial.png" alt="Imagem de Exemplo">
                 <h2>Nenhuma mensagem encontrada</h2>
                 <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
             </div>
-            <button>Copiar</button>
+            <div class="botao-copiar">
+                <button>Copiar</button>
+            </div>
+            
             
         </div>
     </main>
