@@ -34,6 +34,10 @@ body {
     
 }
 
+.subtitulo {
+    margin-bottom: -90px;
+}
+
 .container-texto-de-entrada, .resultado-texto {
     height:50%;
   
@@ -97,6 +101,10 @@ button {
 .resultado-texto {
     display: none;
     font-size: 24px;
+    word-wrap:break-word;
+    word-break: break-word;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .imagem-inicial {
@@ -106,18 +114,24 @@ button {
     font-size: 16px;
 }
 
+.div2 {
+    margin-top: -50px;
+}
 h2 {
     font-size: 24px;
     font-weight: bold;
 }
 
 .botao-copiar {
-    margin-top: 18px;
     display: flex;
     justify-content: center;
     display: none;
 }
 
+.resultado-final {
+    border: 1px solid black;
+    
+}
 
 footer {
     padding: 24px;
