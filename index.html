@@ -12,7 +12,7 @@
     </div>
     <main class="container-decodificador">
         <div class="texto-principal" >
-            <div class="container-texto-de-entrada">
+            <div id="container-texto-de-entrada" class="container-texto-de-entrada">
                 <textarea name="" id="texto-de-entrada">Digite seu texto aqui...</textarea>
             </div>  
             <div>
@@ -21,14 +21,14 @@
                     <p>Apenas letras minúsculas e sem acento.</p>
                 </div>
                 <div class="botoes">
-                    <button id="criptografar">Criptografar</button>
-                    <button>Descriptografar</button>
+                    <button id="botao-criptografar">Criptografar</button>
+                    <button id="botao-descriptografar">Descriptografar</button>
                 </div>
             </div>         
         </div>
         <div class="resultado-decodificador">
             <div class="resultado-texto">
-                <p></p>
+                <p id="resultado-final"></p>
             </div>
             <div class="texto-inicial-resultado">
                 <img class="imagem-inicial" src="assets/foto-inicial.png" alt="Imagem de Exemplo">
@@ -36,7 +36,7 @@
                 <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
             </div>
             <div class="botao-copiar">
-                <button>Copiar</button>
+                <button id="botao-copiar">Copiar</button>
             </div>
             
             
@@ -45,5 +45,7 @@
     <footer>
         <p>Desenvolvido por Reginaldo</p>
     </footer>
+
+    <script src="./app.js"></script>
 </body>
 </html>

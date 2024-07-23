@@ -34,7 +34,7 @@ body {
     
 }
 
-.container-texto-de-entrada, .texto-inicial-resultado, .resultado-texto {
+.container-texto-de-entrada, .resultado-texto {
     height:50%;
   
 }
@@ -78,7 +78,7 @@ button {
     
 }
 
-button#criptografar {
+#botao-criptografar {
     background-color: #0A3871;
     color: white;
 }
@@ -96,6 +96,7 @@ button#criptografar {
 
 .resultado-texto {
     display: none;
+    font-size: 24px;
 }
 
 .imagem-inicial {
@@ -114,6 +115,7 @@ h2 {
     margin-top: 18px;
     display: flex;
     justify-content: center;
+    display: none;
 }
 
 
