@@ -17,13 +17,14 @@ body {
 .logo {
     padding: 10px 0 0 10px;
 }
+
 .container-decodificador {
     margin: 0 5% 10px 5%;
     display: flex;
     height: 100%;
     color: #0A3871;
-    
-    
+
+
 }
 
 .texto-principal {
@@ -31,16 +32,17 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
+
 }
 
-.subtitulo {
+.div-subtitulo {
     margin-bottom: -90px;
 }
 
-.container-texto-de-entrada, .resultado-texto {
-    height:50%;
-  
+.container-texto-de-entrada,
+.resultado-texto {
+    height: 50%;
+
 }
 
 #texto-de-entrada {
@@ -55,31 +57,32 @@ body {
     resize: none;
 }
 
-.aviso{
+.aviso {
     display: flex;
     font-size: 12px;
     margin-bottom: 10px;
 }
 
-.botoes{
+.botoes {
     display: flex;
     justify-content: flex-start;
     gap: 30px;
     padding-right: 10px;
-    
+
 }
 
 button:hover {
     cursor: pointer;
 }
+
 button {
-    width:328px;
+    width: 328px;
     padding: 8px;
     border-radius: 15px;
     color: #0A3871;
     font-size: 16px;
 
-    
+
 }
 
 #botao-criptografar {
@@ -91,7 +94,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    text-align: center;
+    align-items: center;
     width: 35%;
     background-color: white;
     border-radius: 10px;
@@ -99,17 +102,21 @@ button {
 }
 
 .resultado-texto {
+    margin-top: -30px;
     display: none;
     font-size: 24px;
-    word-wrap:break-word;
+    word-wrap: break-word;
     word-break: break-word;
     overflow-y: scroll;
     overflow-x: hidden;
+    padding: 5%;
+    width: 100%;
 }
 
 .imagem-inicial {
-    width:80%;
+    width: 80%;
 }
+
 .texto-inicial-resultado {
     font-size: 16px;
 }
@@ -117,20 +124,17 @@ button {
 .div2 {
     margin-top: -50px;
 }
+
 h2 {
     font-size: 24px;
     font-weight: bold;
 }
 
 .botao-copiar {
+    margin-top: -100px;
     display: flex;
     justify-content: center;
     display: none;
-}
-
-.resultado-final {
-    border: 1px solid black;
-    
 }
 
 footer {
@@ -142,4 +146,69 @@ footer {
     align-items: center;
     height: 30px;
     font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+ 
+    .logo {
+        margin-bottom: 20px;
+    }
+    .div-subtitulo {
+        margin: 0;
+    }
+
+    main {
+        height: 100vh;
+    }
+    .texto-inicial-resultado {
+        display: none;
+    }
+    main, .texto-principal, .resultado-decodificador {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;   
+        
+    }
+    body, .main {
+        gap:20px;
+    }
+     
+    .container-texto-de-entrada {
+        height: 70%;
+    }
+    .div2{
+        margin: 0;
+        padding: 0;
+    }
+
+    .texto-principal, .resultado-decodificador {
+        width: 100%;
+    }
+
+    .texto-principal {
+        height: 70%;
+    }
+
+    .resultado-decodificador {
+        margin-top: 30px;
+        height: 35% ;
+    }
+
+    .resultado-texto {
+        width: 100%;
+    }
+    #subtitulo{
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .botoes, .botao-copiar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    #botao-copiar {
+        width: 80%;
+    }
 }

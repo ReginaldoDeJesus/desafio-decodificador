@@ -93,7 +93,7 @@ botaoCriptografar.addEventListener("click", function () {
     } else {
         textArea.value = "";
         aviso.style.color = "red";
-        aviso.style.fontSize = "24px";
+        aviso.style.fontSize = "18px";
     }
 
 });
@@ -109,7 +109,7 @@ botaoDescriptografar.addEventListener("click", function () {
     } else {
         textArea.value="";
         aviso.style.color = "red";
-        aviso.style.fontSize = "24px";
+        aviso.style.fontSize = "18px";
     }
 
 
