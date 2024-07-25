@@ -198,7 +198,7 @@ footer {
     .resultado-texto {
         width: 100%;
     }
-    #subtitulo{
+    .subtitulo{
         width: 100%;
         justify-content: flex-start;
     }
@@ -211,4 +211,33 @@ footer {
     #botao-copiar {
         width: 80%;
     }
+}
+/**Layout para Smart-phones*/
+@media (max-width: 599px){
+    
+    .texto-principal, .resultado-decodificador {
+        justify-content: center;
+        gap: 5px;
+
+    }
+
+    .subtitulo {
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .resultado-texto {
+        display: flex;
+        margin-top: 0;
+    }
+
+
+    .botoes, .botao-copiar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        width: 95%;
+    }
+   
 }
